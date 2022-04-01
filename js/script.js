@@ -9,13 +9,13 @@
  */
 function calculateClicked() {
   //input
-  const aBase = parseInt(document.getElementById("a-base").value)
-  const bBase = parseInt(document.getElementById("b-base").value)
+  const length = parseInt(document.getElementById("length").value)
+  const width = parseInt(document.getElementById("width").value)
   const height = parseInt(document.getElementById("height").value)
 
   //process
-  const area = ((aBase + bBase) / 2) * height
+  const volume = (length * width * height) / 3
   
   //output
-  document.getElementById("area-of-trapezoid").innerHTML = "<p>The area of the trapezoid is: " +  area + " mm²!</p>"
+  document.getElementById("volume-of-pyramid").innerHTML = "The volume of the pyramid is: " +  volume.toFixed(2) + " cm³!"
 }
